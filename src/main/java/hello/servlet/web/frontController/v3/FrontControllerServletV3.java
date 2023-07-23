@@ -3,7 +3,7 @@ package hello.servlet.web.frontController.v3;
 import hello.servlet.web.frontController.ModelView;
 import hello.servlet.web.frontController.MyView;
 import hello.servlet.web.frontController.v3.controller.MemberFormControllerV3;
-import hello.servlet.web.frontController.v3.controller.MemberListControllV3;
+import hello.servlet.web.frontController.v3.controller.MemberListControllerV3;
 import hello.servlet.web.frontController.v3.controller.MemberSaveControllerV3;
 
 import javax.servlet.ServletException;
@@ -22,7 +22,7 @@ public class FrontControllerServletV3 extends HttpServlet {
     public FrontControllerServletV3(){
         controllerMap.put("/front-controller/v3/members/new-form", new MemberFormControllerV3());
         controllerMap.put("/front-controller/v3/members/save", new MemberSaveControllerV3());
-        controllerMap.put("/front-controller/v3/members", new MemberListControllV3());
+        controllerMap.put("/front-controller/v3/members", new MemberListControllerV3());
     }
 
     @Override
